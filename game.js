@@ -4,6 +4,7 @@ var gamePattern=[];
 var buttonColour = ["red","blue","green","yellow"];
 var randomChosenColour;
 var level = 0;
+let testimonial = document.querySelector("#clear--testimonial");
 
 function playSound(name){
   var audio = new Audio("sounds/" + name + ".mp3");
@@ -27,6 +28,7 @@ function nextSequence(){
 
 
 function compare(){
+  var variablex = 1;
   var flag=0;
   for(var j = 0; j < userClickedPattern.length; j++){
   if(userClickedPattern[j]!=gamePattern[j]){
